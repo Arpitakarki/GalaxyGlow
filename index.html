@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GalaxyGlow</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="main-header">
+          <div class="logo">
+            <img src="image/logo.png" />
+          </div>
+          <div class="search-bar">
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search" />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+          </div>
+          <div class="icons">
+            <p id="loginText">Login</p>
+            <div id="userInfo" style="display: none">
+              <i class="fa-solid fa-user" id="userIcon"></i>
+            </div>
+            <div class="i">
+              <i class="fa-solid fa-ellipsis-vertical"> </i>
+              <div class="dropdown" id="dropdown">
+                <span>Change Mode</span>
+                <label class="mode-switch">
+                  <input type="checkbox" id="modeToggle" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- form -->
+
+    <div id="overlay"></div>
+
+    <div id="loginContainer">
+      <span id="closeBtn">&times;</span>
+      <form id="loginForm">
+        <h2>Login</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- banner -->
+
+    <div class="main-banner">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/banner2.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/banner-1.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/banner-3.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- next section -->
+    <div class="section-1">
+      <div class="content-section">
+        <h2>Listen All Indian Songs</h2>
+        <div class="mixes">
+          <!-- Each mix card -->
+          <div class="mix-card">
+            <a href="index file/index1.html"
+              ><img src="image/hindi-song.png" alt="Mix Name"
+            /></a>
+            <h3>All Hindi</h3>
+            <p>Listen All Type Of Hindi Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index2.html"
+              ><img src="image/marathi-song.png" alt="Mix Name"
+            /></a>
+            <h3>All Marathi</h3>
+            <p>Listen All Type Of Marathi Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index3.html"
+              ><img src="image/gujrati.png" alt="Mix Name"
+            /></a>
+            <h3>All Gujrati</h3>
+            <p>Listen All Type Of Gujrati Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index4.html">
+              <img src="image/punjabi.png" alt="Mix Name" />
+            </a>
+            <h3>All Punjabi</h3>
+            <p>Listen All Type Of Punjabi Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index5.html">
+              <img src="image/rajesthan-song.png" alt="Mix Name" />
+            </a>
+            <h3>All Rajesthani</h3>
+            <p>Listen All Type Of Rajeshthani Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index6.html">
+              <img src="image/bengoli-song.png" alt="Mix Name" />
+            </a>
+            <h3>All Bengoli</h3>
+            <p>Listen All Type Of Bengoli Songs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h2>Listen K-Pop Songs</h2>
+        <div class="mixes">
+          <!-- Each mix card -->
+          <div class="mix-card mix-card-1">
+            <a href="index file/index7.html">
+              <img src="image/BTS.png" alt="Mix Name" />
+            </a>
+            <h3>BTS</h3>
+            <p>Listen All BTS Songs</p>
+          </div>
+          <div class="mix-card mix-card-1">
+            <a href="index file/index8.html">
+              <img src="image/BLACKPINK.png" alt="Mix Name" />
+            </a>
+            <h3>BlackPink</h3>
+            <p>Listen All BlackPink Songs</p>
+          </div>
+          <div class="mix-card mix-card-1">
+            <a href="index file/index9.html">
+              <img src="image/exo-1.png" alt="Mix Name" />
+            </a>
+            <h3>EXO</h3>
+            <p>Listen All EXO Songs</p>
+          </div>
+          <div class="mix-card mix-card-1">
+            <a href="index file/index10.html">
+              <img src="image/txt.png" alt="Mix Name" />
+            </a>
+            <h3>TXT</h3>
+            <p>Listen All TXT Songs</p>
+          </div>
+          <div class="mix-card mix-card-1">
+            <a href="index file/index11.html">
+              <img src="image/XG.png" alt="Mix Name" />
+            </a>
+            <h3>XG</h3>
+            <p>Listen All XG Songs</p>
+          </div>
+          <div class="mix-card mix-card-1">
+            <a href="index file/index12.html">
+              <img src="image/MAMAMOO.png" alt="Mix Name" />
+            </a>
+            <h3>MAMAMOO</h3>
+            <p>Listen All MAMAMOO Songs</p>
+          </div>
+          <!-- Repeat for each mix -->
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h2>Exeperiance All English Songs</h2>
+        <div class="mixes">
+          <div class="mix-card">
+            <a href="index file/index13.html">
+              <img src="image/dua-lipa.png" alt="Mix Name" />
+            </a>
+            <h3>Dua Lipa</h3>
+            <p>Listen All Dua Lipa Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index14.html">
+              <img src="image/Justin-Bieber.png" alt="Mix Name" />
+            </a>
+            <h3>Justin Bieber</h3>
+            <p>Listen All Justin Bieber Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index15.html">
+              <img src="image/charlie-puth.png" alt="Mix Name" />
+            </a>
+            <h3>charlie Puth</h3>
+            <p>Listen All charlie Puth Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index16.html">
+              <img src="image/Adela.png" alt="Mix Name" />
+            </a>
+            <h3>Adele</h3>
+            <p>Listen All Adele Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index17.html">
+              <img src="image/Ed Shreeran.png" alt="Mix Name" />
+            </a>
+            <h3>Ed Sheeran</h3>
+            <p>Listen All Ed Sheeran Songs</p>
+          </div>
+          <div class="mix-card">
+            <a href="index file/index18.html">
+              <img src="image/sean-paul.png" alt="Mix Name" />
+            </a>
+            <h3>Sean Paul</h3>
+            <p>Listen All Sean Paul Songs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-content">
+          <img src="image/full-name.png" alt="Footer Image" width="100">
+          <p>
+            Welcome to our vibrant musical realm, where melodies sway and rhythms dance! Our platform is your gateway to an eclectic universe of sounds, where every note tells a story and every chord resonates with emotion.
+
+            Dive into our extensive collection spanning genres from classical to contemporary, jazz to rock, and everything in between. Whether you're a seasoned aficionado or a curious newcomer, there's something here to enchant your ears and ignite your passion for music.
+            
+            Immerse yourself in the rich history of legendary artists and iconic albums, or venture into uncharted territory with emerging talents and groundbreaking compositions. Our curated playlists and expert reviews will guide you on a journey of sonic exploration, uncovering hidden gems and timeless classics along the way.
+            
+            Join our thriving community of music enthusiasts, where lively discussions and shared discoveries await. Connect with fellow fans, exchange recommendations, and celebrate the universal language of music together.
+            
+            So, tune in, turn up the volume, and let the music carry you away. With our platform as your companion, the beat never stops and the possibilities are endless. Let the adventure begin!          </p>
+          <div class="footer-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+          </div>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

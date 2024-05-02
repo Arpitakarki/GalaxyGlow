@@ -1,0 +1,270 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  /* section{
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 100vh;
+    width: 100vw;
+  } */
+  
+  header {
+    background-color: #00000091;
+    color: #fff;
+    z-index: 100;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  
+  header .main-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 5%;
+    padding: 10px 0px;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  .search-bar {
+    width: 70%;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    padding-left: 10px;
+    font-size: 17px;
+    width: 90%;
+    color: #fff;
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+  }
+  
+  .search-container input::placeholder {
+    color: #fff;
+  }
+  
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    color: #fff;
+    margin-right: 16px;
+    background: transparent;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icons {
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .icons p {
+    padding-top: 20px;
+    cursor: pointer;
+  }
+  
+  .icons .i i {
+    padding-top: 15px;
+  }
+  
+  .icons .i {
+    position: relative;
+  }
+  
+  .icons .i:hover .dropdown {
+    display: block;
+  }
+  
+  .icons .i .dropdown {
+    position: absolute;
+    background-color: #5d5d5d;
+    padding: 20px;
+    display: none;
+    width: 150px;
+    top: 35px;
+    right: -60px;
+  }
+  
+  .mode-switch {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .mode-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  
+  
+  
+  
+  /* form */
+  
+  #userIcon{
+      padding-top: 12px;
+  }
+  
+  #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.815); 
+      z-index: 1;
+      display: none;
+  }
+  
+  #loginContainer {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #e8b125;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      display: none;
+  }
+  
+  #loginContainer h2 {
+      margin-top: 0;
+  }
+  
+  #closeBtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 24px;
+  }
+  
+  #loginForm label {
+      display: block;
+      margin-bottom: 10px;
+  }
+  
+  #loginForm input {
+      width: 100%;
+      padding: 8px;
+      background-color: #0000007d;
+      border-radius: 50px;
+      margin-bottom: 15px;
+  }
+  
+  #loginForm button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3c2e00;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+  /* section */
+
+  .kpop-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  
+.container-2{
+  justify-content: center;
+  gap: 110px;
+}
+
+  .kpop-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .kpop-group img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .kpop-group span {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+  }
+  
